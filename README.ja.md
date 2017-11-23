@@ -4,7 +4,7 @@
 
 ## セットアップ
 
-1. [Git](https://git-scm.com/)と[Jekyll](https://jekyllrb.com/)をインストールする
+1. [Git](https://git-scm.com/)、[Git LFS](https://git-lfs.github.com/)、[Jekyll](https://jekyllrb.com/)をインストールする
 1. ターミナルで以下のコマンドを入力:
 ```
 git clone https://github.com/nourished-jp/nourished-jp.github.io nourished

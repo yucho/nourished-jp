@@ -4,7 +4,7 @@ Read me in other languages: [日本語](README.ja.md)
 
 ## Setup
 
-1. Install [Git](https://git-scm.com/) and [Jekyll](https://jekyllrb.com/)
+1. Install [Git](https://git-scm.com/), [Git LFS](https://git-lfs.github.com/), and [Jekyll](https://jekyllrb.com/)
 1. On terminal, run:
 ```
 git clone https://github.com/nourished-jp/nourished-jp.github.io nourished
