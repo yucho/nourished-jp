@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
-date: 2017-04-06 13:32:20 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img:  # Add image post (optional)
+title: "画像なしの記事はこう表示されるヨ"
+date: 2017-10-06 13:32:20 +0900
+description: この記事は`_posts`ディレクトリにある。改変してビルドしてみよう # 記事の概要 (任意)
+img: # 記事のイメージ画像 (任意)
+tags: 読み物
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
