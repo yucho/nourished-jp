@@ -4,12 +4,13 @@
 
 ## セットアップ
 
-1. [Git](https://git-scm.com/)、[Git LFS](https://git-lfs.github.com/)、[Jekyll](https://jekyllrb.com/)をインストールする
+1. [Git](https://git-scm.com/)、[Git LFS](https://git-lfs.github.com/)、[RubyGems](https://rubygems.org/)、[Jekyll](https://jekyllrb.com/)、[Bundler](http://bundler.io/)をインストールする
 1. ターミナルで以下のコマンドを入力:
 ```
 git clone https://github.com/nourished-jp/nourished-jp.github.io nourished
 cd nourished
-jekyll serve
+bundle install
+bundle exec jekyll serve
 ```
 1. ブラウザで``http://127.0.0.1:4000``を開く
 1. ソースの開発を行う。Jekyllの使い方に関しては[Jekyllドキュメンテーション](https://jekyllrb.com/docs/home/)を参照
