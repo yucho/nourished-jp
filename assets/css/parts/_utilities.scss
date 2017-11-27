@@ -1,0 +1,19 @@
+@import 'variables';
+
+$ingredients-line-color: $dark-gray;
+
+.ingredients {
+	width: 100%;
+	max-width: 30em;
+	min-width: 15em;
+	list-style-type: none;
+	ul, ol, dl { list-style-type: none; }
+	li {
+		border-bottom: 1px solid $ingredients-line-color;
+		ul, ol, dl { border-top: 1px solid $ingredients-line-color; }
+		&.has-sublist { border-bottom: none; }
+	}
+	.ingredient-quantity {
+		float: right;
+	}
+}

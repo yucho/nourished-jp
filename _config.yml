@@ -27,9 +27,12 @@ analytics: # Google Analytics
 # Build Settings
 markdown: kramdown
 plugins_dir:
+  - _plugins
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+sass:
+  sass_dir: assets/css
 
 paginate: 8
 paginate_path: "/page/:num"

@@ -1,6 +1,8 @@
-@import 'normalize';
-@import 'syntax';
-@import 'variables';
+---
+---
+@import 'parts/normalize';
+@import 'parts/syntax';
+@import 'parts/variables';
 
 *, *::after, *::before {
   box-sizing: border-box;
@@ -129,5 +131,8 @@ table tfoot td {
 /* - - - - - - - - - - Tag Styles - - - - - - - - - - */
 @import 'parts/tag';
 
+/* - - - - - - - - - - Utility Styles - - - - - - - - - - */
+@import 'parts/utilities';
+
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
-@import 'media';
+@import 'parts/media';
