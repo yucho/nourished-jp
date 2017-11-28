@@ -5,15 +5,15 @@ Read me in other languages: [日本語](README.md)
 ## Setup
 
 1. Install [Git](https://git-scm.com/), [Git LFS](https://git-lfs.github.com/), [RubyGems](https://rubygems.org/), [Jekyll](https://jekyllrb.com/), and [Bundler](http://bundler.io/)
-1. On terminal, run:
+2. On terminal, run:
 ```
 git clone https://github.com/nourished-jp/nourished-jp.github.io nourished
 cd nourished
 bundle install
 bundle exec jekyll serve
 ```
-1. Open browser and type in: ``http://127.0.0.1:4000``
-1. Start editing source. Check out [Jekyll docs](https://jekyllrb.com/docs/home/) for more info
+3. Open browser and type in: ``http://127.0.0.1:4000``
+4. Start editing source. Check out [Jekyll docs](https://jekyllrb.com/docs/home/) for more info
 
 ## Note
 
