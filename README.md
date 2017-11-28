@@ -1,24 +1,24 @@
-# Nourished is a web magazine advocating zero food waste
+# Nourishedとは、食品廃棄物をゼロにすることを目標に掲げるウェブマガジンである。
 
-Read me in other languages: [日本語](README.ja.md)
+他の言語で読む：[English](README.en.md)
 
-## Setup
+## セットアップ
 
-1. Install [Git](https://git-scm.com/), [Git LFS](https://git-lfs.github.com/), [RubyGems](https://rubygems.org/), [Jekyll](https://jekyllrb.com/), and [Bundler](http://bundler.io/)
-1. On terminal, run:
+1. [Git](https://git-scm.com/)、[Git LFS](https://git-lfs.github.com/)、[RubyGems](https://rubygems.org/)、[Jekyll](https://jekyllrb.com/)、[Bundler](http://bundler.io/)をインストールする
+1. ターミナルで以下のコマンドを入力:
 ```
 git clone https://github.com/nourished-jp/nourished-jp.github.io nourished
 cd nourished
 bundle install
 bundle exec jekyll serve
 ```
-1. Open browser and type in: ``http://127.0.0.1:4000``
-1. Start editing source. Check out [Jekyll docs](https://jekyllrb.com/docs/home/) for more info
+1. ブラウザで``http://127.0.0.1:4000``を開く
+1. ソースの開発を行う。Jekyllの使い方に関しては[Jekyllドキュメンテーション](https://jekyllrb.com/docs/home/)を参照
 
-## Note
+## 注意事項
 
-The ``master`` branch contains the source codes, and ``gh-pages`` branch contains build files. Do not edit files in ``gh-pages`` directly because any changes will be deleted upon rebuild.
+ソースコードは``master``、ビルドファイルは``gh-pages``ブランチにコミットされる。つまり``gh-pages``内のファイルを改変しても、ビルド時に削除されるので、基本触らないように。
 
-### License
+### ライセンス
 
 GNU General Public License v3.0
