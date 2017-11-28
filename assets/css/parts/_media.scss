@@ -39,7 +39,7 @@
     }
 
   }
-  .about {
+  .menu {
     text-align: center;
     max-width: 480px;
     margin: 10px auto auto;
@@ -48,6 +48,12 @@
       height: 100px;
       border-radius: 100%;
       margin-bottom: 10px;
+    }
+    .menu-list {
+      line-height: 1.5;
+      li {
+        margin: 0;
+      }
     }
 }
 
