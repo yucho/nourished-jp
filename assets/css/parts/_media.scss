@@ -1,5 +1,7 @@
+@import 'variables';
+
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 1023px) {
   .post {
     width: 48%;
     max-width: 100%;
@@ -26,34 +28,70 @@
 @media only screen and (max-width : 768px) {
   .sidebar {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: block;
     width: 100%;
-    padding: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
-
-    footer {
-      margin-bottom: 10px;
-    }
-
+    height: 94px;
+    margin: 0;
   }
   .menu {
-    text-align: center;
-    max-width: 480px;
-    margin: 10px auto auto;
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 100%;
-      margin-bottom: 10px;
+    .site-image {
+      position: absolute;
+      height: auto;
+      max-width: 360px;
+      top: 50%;
+      left: 50%;
+      margin: 0;
+      transform: translate(-50%, -50%);
     }
-    .menu-list {
-      line-height: 1.5;
-      li {
-        margin: 0;
+    .navbar {
+      .navicon {
+        position: absolute;
+        display: block;
+        width: 94px;
+        height: 94px;
+        top: 0;
+        right: 0;
+        text-align: center;
+        .fa {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+        &.navicon-open {
+          color: $white;
+          background: $dark;
+        }
       }
+      .menu-list {
+        position: absolute;
+        display: none;
+        top: 94px;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        line-height: 2;
+        z-index: 10;
+        li {
+          background: $white;
+          border-top: 1px solid $gray;
+          margin: 0;
+          padding: 0 32px 0;
+          &:last-of-type {
+            border-bottom: 1px solid $gray;
+          }
+        }
+        &.menu-list-open {
+          display: block;
+        }
+        &:hover, &:active {
+          display: block;
+        }
+      }
+    }
+    h1 > span {
+      display: inline;
     }
 }
 

@@ -6,15 +6,20 @@ layout: default
   <header>
     <div class="menu">
       <div class="site-image">
-        <a href="{{site.baseurl}}/">{% if site.site-img %}<img src="{{site.baseurl}}/assets/img/{{site.site-img}}" alt="{{site.title}}">{% else %}<h1>{{site.title}}<br />ロゴ{% endif %}</h1></a>
+        <a href="{{site.baseurl}}/">{% if site.site-img %}<img src="{{site.baseurl}}/assets/img/{{site.site-img}}" alt="{{site.title}}">{% else %}<h1>{{site.title}} <span>ロゴ</span></h1>{% endif %}</a>
       </div>
-      <ul class="menu-list">
-        <li>レシピ</li>
-        <li>読み物</li>
-        <li>イベント</li>
-        <li>過去の記事</li>
-        <li>運営団体</li>
-      </ul>
+      <div class="navbar" tabindex="1">
+        <div class="navicon">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul class="menu-list">
+          <li>レシピ</li>
+          <li>読み物</li>
+          <li>イベント</li>
+          <li>過去の記事</li>
+          <li>運営団体</li>
+        </ul>
+      </div>
     </div>
   </header> <!-- End Header -->
   <footer>
