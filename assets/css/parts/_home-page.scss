@@ -8,16 +8,15 @@
   bottom: 0;
   width: 240px;
   height: 100%;
-  padding: 20px 10px;
   background-color: $white;
 }
 .menu {
-  margin: 0 0 40px;
   text-align: center;
   .site-image {
+    position: relative;
     width: 100%;
     height: 100%;
-    margin: 0 auto 10px;
+    margin-top: 40px;
   }
   img {
     width: 100%;
@@ -25,15 +24,20 @@
   }
   h1 {
     font-size: 30px;
+    margin: 0;
     text-align: center;
     color: $dark;
+    > span {
+      display: block;
+    }
   }
   a {
     text-decoration: none;
   }
-  p {
-    font-size: 16px;
-    margin: 0 0 10px;
+  .navbar { position: static; }
+  .navicon {
+    font-size: 32px;
+    display: none;
   }
   .menu-list {
     font-size: 24px;
@@ -67,11 +71,11 @@ footer {
 }
 
 .post {
-  width: 100%;
+  width: 31%;
   max-width: 100%;
-  margin-bottom: 1.5rem;
+  margin: 0 1% 1.5%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: stretch;
   min-height: 11rem;
   border-radius: 10px;
@@ -84,7 +88,7 @@ footer {
   }
 
   .post-thumbnail {
-    width: 30%;
+    width: 100%;
     max-width: 100%;
     min-height: 11rem;
     background-size: cover;
@@ -93,14 +97,15 @@ footer {
 
   .post-content {
     padding: 1rem;
-    width: 70%;
+    width: 100%;
     .post-date {
       font-size: 12px;
     }
     .post-title {
       margin: 0 0 10px;
-      font-size: 30px;
+      font-size: 21px;
       font-weight: 400;
+      line-height: 1;
       a {
         font-family: 'PT Serif', serif;
         text-decoration: none;
