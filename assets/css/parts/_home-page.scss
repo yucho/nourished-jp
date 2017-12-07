@@ -39,11 +39,11 @@
   }
   .navbar {
     position: static;
-    &:focus { outline: none; }
   }
   .navicon {
     font-size: 32px;
     display: none;
+    &:focus { outline: none; }
   }
   .menu-list {
     font-size: 24px;
@@ -54,6 +54,7 @@
     padding-left: 23px;
     font-family: 'PT Serif', serif;
     font-weight: 500;
+    &:focus { outline: none; }
     li {
       margin-bottom: 31px;
       &:last-of-type {

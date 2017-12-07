@@ -3,6 +3,8 @@ $(document).ready(function() {
 	$(".menu-list").hover(addNaviconOpen, removeNaviconOpen);
 	$(".navicon").on("focusin", addMenuOpen);
 	$(".navicon").on("focusout", removeMenuOpen);
+	$(".menu-list").on("focusin", addNaviconOpen);
+	$(".menu-list").on("focusout", removeNaviconOpen);
 
 	function addMenuOpen() {
 		$(".menu-list").addClass("menu-list-open");
