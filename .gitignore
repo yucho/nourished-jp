@@ -2,7 +2,7 @@ _site
 .sass-cache
 .jekyll-metadata
 yarn.lock
-Gemfile.lock
+# Gemfile.lock # Better have this for product release
 node_modules/
 
 ### macOS ###
