@@ -1,0 +1,7 @@
+<ul{% unless include.sub-list %} class="ingredients"{% endunless %}>
+  {% for set in include.ingredients %}
+  <li class="clearfix{% if set.c %} has-sublist{% endif %}">{{ set.a }}{% if set.b %}<span class="ingredient-quantity">{{ set.b }}</span>{% endif %}
+  	{% if set.c %}{% include ingredients.html ingredients=set.c sub-list=true %}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
