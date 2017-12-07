@@ -3,7 +3,8 @@
 		{% for post in paginator.posts limit:5 %}
 		<article class="carousel-panel">
   		{% if post.img %}
-    	<img class="carousel-post-image" src="{{'/assets/img/' | prepend: site.baseurl | append : post.img}}">
+      {% capture img_url_start %}{{ post.img | lstrip | slice: 0,8 }}{% endcapture %}
+    	<a class="carousel-post-image" style="background-image: url({% if img_url_start contains 'http://' or img_url_start contains 'https://' %}{{post.img}}{% else %}{{'/assets/img/' | prepend: site.baseurl | append : post.img}}{% endif %})" href="{{post.url | prepend: site.baseurl}}"></a>
 		  {% else %}
 		  {% endif %}
 		  <div class="carousel-post-content">

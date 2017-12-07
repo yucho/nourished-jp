@@ -5,6 +5,11 @@ date: 2017-11-25 11:11:11 +0900
 description: この記事は`_posts`ディレクトリにある。改変してビルドしてみよう # 記事の概要 (任意)
 img: http://yuchoho.com/images/golfball-on-grass_1680x810.png # 記事のイメージ画像 (任意)
 tags: 読み物
+styles: "|
+  .test-styles-tag {
+  	width: 100px;
+  }
+"
 ---
 
 みなさんはゴルフをプレイされたことがあるだろうか。

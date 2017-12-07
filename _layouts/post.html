@@ -4,8 +4,9 @@ layout: main
 <article class="article-page">
   <div class="page-content">
     {% if page.img %}
+    {% capture img_url_start %}{{ page.img | lstrip | slice: 0,8 }}{% endcapture %}
     <div class="page-cover-image">
-      <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+      <img class="page-image" src="{% if img_url_start contains 'http://' or img_url_start contains 'https://' %}{{page.img}}{% else %}{{"/assets/img/" | prepend: site.baseurl | append : page.img}}{% endif %}" alt="{{page.title}}">
     </div> <!-- End Page Cover Image -->
     {% else %}
     {% endif %}

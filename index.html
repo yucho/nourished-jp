@@ -7,8 +7,10 @@ layout: main
 {% for post in paginator.posts offset:5 limit:6 %}
 <article class="post">
   {% if post.img %}
-    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% capture img_url_start %}{{ post.img | lstrip | slice: 0,8 }}{% endcapture %}
+    <a class="post-thumbnail" style="background-image: url({% if img_url_start contains 'http://' or img_url_start contains 'https://' %}{{post.img}}{% else %}{{'/assets/img/' | prepend: site.baseurl | append : post.img}}{% endif %})" href="{{post.url | prepend: site.baseurl}}"></a>
   {% else %}
+  	<span class="post-thumbnail no-thumbnail"></span>
   {% endif %}
   <div class="post-content">
     <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
