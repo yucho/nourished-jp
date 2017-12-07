@@ -3,7 +3,7 @@ layout: post
 title: フルーツとスパイスの散らし卓
 date: 2017-11-26 06:25:02 +0900
 description: ダミーなレシピです（当たり前） # 記事の概要 (任意)
-img: https://cdn.pixabay.com/photo/2017/11/04/19/05/christmas-2918569_1280.jpg # 記事のイメージ画像 (任意)
+img: fake-table.jpg # 記事のイメージ画像 (任意)
 tags: レシピ
 ---
 

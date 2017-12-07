@@ -3,7 +3,7 @@ layout: post
 title: みかんを食べようの会
 date: 2017-11-25 11:11:11 +0900
 description: この記事は`_posts`ディレクトリにある。改変してビルドしてみよう # 記事の概要 (任意)
-img: https://cdn.pixabay.com/photo/2016/01/05/13/58/apple-1122537_1280.jpg # 記事のイメージ画像 (任意)
+img: fake-apple.jpg # 記事のイメージ画像 (任意)
 tags: イベント
 styles: "|
   .test-styles-tag {

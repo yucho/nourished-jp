@@ -3,7 +3,7 @@ layout: post
 title: ３７文字の記事タイトルは、こういう風に表示されるというデモンストレーション
 date: 2017-11-27 06:06:06 +0900
 description: この記事は`_posts`ディレクトリにある。改変してビルドしてみよう # 記事の概要 (任意)
-img: https://cdn.pixabay.com/photo/2017/11/22/22/53/nuts-2971675_1280.jpg # 記事のイメージ画像 (任意)
+img: fake-nuts.jpg # 記事のイメージ画像 (任意)
 tags: 読み物
 ---
 

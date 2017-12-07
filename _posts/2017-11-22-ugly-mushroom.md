@@ -3,7 +3,7 @@ layout: post
 title: 器量が悪いキノコは美味い
 date: 2017-11-22 06:06:06 +0900
 description: この記事は`_posts`ディレクトリにある。改変してビルドしてみよう # 記事の概要 (任意)
-img: https://cdn.pixabay.com/photo/2017/10/04/21/36/fly-agaric-2817723_1280.jpg # 記事のイメージ画像 (任意)
+img: fake-mushroom.jpg # 記事のイメージ画像 (任意)
 tags: 読み物
 ---
 

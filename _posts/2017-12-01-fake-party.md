@@ -3,7 +3,7 @@ layout: post
 title: Nourished主催パーティ開催のお知らせ（嘘）
 date: 2017-12-01 00:00:00 +0900
 description: この記事は`_posts`ディレクトリにある。改変してビルドしてみよう # 記事の概要 (任意)
-img: https://cdn.pixabay.com/photo/2017/11/16/09/33/buffet-2953875_1280.jpg # 記事のイメージ画像 (任意)
+img: fake-party.jpg # 記事のイメージ画像 (任意)
 tags: イベント
 ---
 
