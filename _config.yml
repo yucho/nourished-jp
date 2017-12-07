@@ -8,13 +8,14 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Yucho Ho # add your name
-author-img: david-freeman.jpg # add your photo
+author-img: # add your photo
 about-author: 地球人兼プログラマーで、密かに社会の役に立つ計画を立てている。実績はまだない。 # add description
 organization: Nourished # add your organization
-site-img: # add site logo
+site-img: nourished.png # add site logo
+site-img-small: nourished-small.png # add site logo for small screen
 twitter: # add your Twitter handle
 facebook: # add your Facebook handle
-github: yucho # add your Github handle
+github: nourished-jp # add your Github handle
 linkedin: # add your Linkedin handle
 email: # add your Email address
 

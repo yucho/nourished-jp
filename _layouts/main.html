@@ -6,7 +6,15 @@ layout: default
   <header>
     <div class="menu">
       <div class="site-image">
-        <a href="{{site.baseurl}}/">{% if site.site-img %}<img src="{{site.baseurl}}/assets/img/{{site.site-img}}" alt="{{site.title}}">{% else %}<h1>{{site.title}} <span>ロゴ</span></h1>{% endif %}</a>
+        <a href="{{site.baseurl}}/">
+          {% assign no-site-img = true %}
+          {% assign no-site-img-small = true %}
+          {% if site.site-img %}{% assign no-site-img = false %}<img class="site-img" src="{{site.baseurl}}/assets/img/{{site.site-img}}" alt="{{site.title}}">{% endif %}
+          {% if site.site-img-small %}{% assign no-site-img-small = false %}<img class="site-img-small" src="{{site.baseurl}}/assets/img/{{site.site-img-small}}" alt="{{site.title}}">{% endif %}
+          {% if no-site-img or no-site-img-small %}
+          <h1 class="{% if site.site-img %}{{ 'yes-site-img' }}{% endif%}{% if site.site-img-small %}{{' yes-site-img-small'}}{% endif %}">{{site.title}}</h1>
+          {% endif %}
+        </a>
       </div>
       <div class="navbar" tabindex="1">
         <div class="navicon">

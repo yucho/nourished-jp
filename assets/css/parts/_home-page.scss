@@ -20,17 +20,18 @@
     height: 100%;
     margin-top: 40px;
   }
+  .site-img-small { display: none; }
   img {
     width: 100%;
     height: 100%;
   }
   h1 {
-    font-size: 30px;
-    margin: 0;
+    font-size: 28px;
+    margin: 0 10px 0;
     text-align: center;
     color: $dark;
-    > span {
-      display: block;
+    &.yes-site-img {
+      display: none;
     }
   }
   a {
@@ -46,6 +47,7 @@
     list-style-type: none;
     text-align: left;
     line-height: 1;
+    margin-top: 31px;
     li {
       margin-bottom: 31px;
       &:last-of-type {
@@ -55,9 +57,7 @@
   }
 }
 .content-box {
-  padding: 20px;
-  padding-left: 260px;
-
+  padding-left: 240px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -73,14 +73,12 @@ footer {
 }
 
 .post {
-  width: 31%;
+  width: 33.33%;
   max-width: 100%;
-  margin: 0 1% 1.5%;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  min-height: 11rem;
-  border-radius: 10px;
   overflow: hidden;
   transition: all .3s ease;
   box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
@@ -118,6 +116,11 @@ footer {
       margin-top: 0;
     }
   }
+}
+
+.article-page, .blog-tags {
+  width: 98%;
+  margin-left: 2%;
 }
 
 a.older-posts, a.newer-posts {
@@ -160,6 +163,7 @@ a.newer-posts:hover {
   margin: 0;
   padding: 0;
   text-align: center;
+  line-height: 1;
 }
 .carousel-thumb {
   width: 0px;
@@ -187,8 +191,8 @@ a.newer-posts:hover {
 }
 .carousel-post-content {
   position: absolute;
+  left: 0;
   bottom: 0;
-  max-width: 100%;
   display: inline-block;
   text-align: right;
 }
@@ -207,9 +211,8 @@ a.newer-posts:hover {
   margin: 0px 5px 0px 5px;
   padding: 16px;
 }
-.carousel-post-tag {
-  margin-right: 25px;
-}
+.carousel-post-date { margin-left: 25px; }
+.carousel-post-tag { margin-right: 25px; }
 .carousel-post-title {
   @include carousel-post-text;
   font-size: 21px;
@@ -217,6 +220,7 @@ a.newer-posts:hover {
   line-height: 1;
   margin: 10px 25px 25px;
   padding: 18px;
+  text-align: left;
   a {
     font-family: 'PT Serif', serif;
     text-decoration: none;
