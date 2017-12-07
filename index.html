@@ -15,6 +15,7 @@ layout: main
   <div class="post-content">
     <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
     <span class="post-date">{{post.date | date: '%Y.%m.%d'}}</span>
+    <span class="post-tag">{{post.tags[0]}}</span>
   </div>
 </article>
 {% endfor %}

@@ -37,7 +37,10 @@
   a {
     text-decoration: none;
   }
-  .navbar { position: static; }
+  .navbar {
+    position: static;
+    &:focus { outline: none; }
+  }
   .navicon {
     font-size: 32px;
     display: none;
@@ -48,12 +51,32 @@
     text-align: left;
     line-height: 1;
     margin-top: 31px;
+    padding-left: 23px;
     font-family: 'PT Serif', serif;
     font-weight: 500;
     li {
       margin-bottom: 31px;
       &:last-of-type {
         margin-bottom: 26px;
+      }
+    }
+  }
+  .sns-icons {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1;
+    text-align: left;
+    .sns-icon {
+      display: inline-block;
+      vertical-align: middle;
+      width: 32px;
+      height: 32px;
+      margin-left: 23px;
+      transition: all .4s ease;
+      &:hover {
+        transform: scale(1.2);
       }
     }
   }
@@ -100,9 +123,10 @@ footer {
   .post-content {
     padding: 1rem;
     width: 100%;
-    .post-date {
+    .post-date, .post-tag {
       font-size: 12px;
     }
+    .post-tag { margin-left: 11px; }
     .post-title {
       margin: 0 0 10px;
       font-size: 21px;
